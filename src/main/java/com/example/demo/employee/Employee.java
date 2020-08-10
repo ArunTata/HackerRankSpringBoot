@@ -35,8 +35,11 @@ public class Employee implements Comparable<Employee> {
 	
 	@Override
     public int compareTo(Employee emp) {
-    //replace your comparator here
-       return 0;
+     if(this < emp.getAge)
+	     return 1;
+     if(this > emp.getAge)
+	     return -1;
+      return 0;
     }
     
 	
